@@ -2,16 +2,18 @@
 
 <template>
   <div>
-    <header>
-      <div>
+    <header class="container mx-auto flex">
+      <div class="flex-initial">
         <img src="" alt="" />
-        <div>
-          <h2>TvoyVpn</h2>
+        <div class="text-xl font-extrabold">
+          <h1>TvoyVpn</h1>
         </div>
       </div>
 
       <ul>
-        <li></li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
         <!-- navigation -->
       </ul>
 
