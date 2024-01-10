@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@layer components {
+  /* .primaryBgColor {
+    background-color: (266deg, #b5a9ff 0%, #6e81fe 101.9%);
+  } */
+  /* .btn-primary {
+    @apply bg-primaryColor border  border-primary  hover:bg-primary hover:border hover:border-primary;
+  } */
+}
