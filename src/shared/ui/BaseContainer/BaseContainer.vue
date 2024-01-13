@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="w-full lg:container m-auto px-5">
+  <div class="w-full lg:container mx-auto mx-[351px]">
     <slot name="default"></slot>
   </div>
 </template>

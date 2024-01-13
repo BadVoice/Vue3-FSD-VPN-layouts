@@ -21,7 +21,7 @@ defineEmits(['click'])
       variant === 'primary'
         ? 'group bg-gradient-to-r from-primary2 to-primary1 hover:from-primary2Hover hover:to-primary1Hover'
         : '',
-      variant === 'secondary' ? 'group border border-primary1' : '',
+      variant === 'secondary' ? 'group border border-primary1 ' : '',
       variant === 'link' ? '' : ''
     ]"
   >
