@@ -14,6 +14,7 @@ export const useBreakpoints = () => {
     isSm: viewportWidth.value >= BREAKPOINTS.SM,
     isMd: viewportWidth.value >= BREAKPOINTS.MD,
     isLg: viewportWidth.value >= BREAKPOINTS.LG,
-    isXl: viewportWidth.value >= BREAKPOINTS.XL
+    isXl: viewportWidth.value >= BREAKPOINTS.XL,
+    isXXl: viewportWidth.value >= BREAKPOINTS.XXL
   }))
 }

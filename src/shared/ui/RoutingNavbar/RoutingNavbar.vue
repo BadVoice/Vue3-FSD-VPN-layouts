@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import { navlinksMock } from '../RoutingNavbar/__mocks__/navlinksMock'
+import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints/useBreakPoints'
 const route = useRoute()
 
 const activePage = (path: string) => {
   return route.path === path
 }
+const breakpoints = useBreakpoints()
 </script>
 <template>
   <nav class="m-auto">
@@ -13,8 +15,8 @@ const activePage = (path: string) => {
       <li v-for="{ id, title, to } in navlinksMock" :key="id">
         <router-link
           :to="to"
-          class="hover:text-black transition-all duration-200"
-          :class="{ 'text-black': activePage(to) }"
+          class="hover:text-primary1Hover transition-all duration-200"
+          :class="{ 'text-white': activePage(to) }"
         >
           {{ title }}
         </router-link>

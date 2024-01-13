@@ -19,9 +19,11 @@ defineEmits(['click'])
       size === 'medium' ? 'px-[32px] py-[16px] leading-6 text-lg font-normal' : '',
       size === 'big' ? ' px-32 h-16 text-xl' : '',
       variant === 'primary'
-        ? 'group bg-gradient-to-r from-primary2 to-primary1 hover:from-primary2Hover hover:to-primary1Hover'
+        ? 'bg-gradient-to-r from-primary2 to-primary1 duration-300 hover:from-primary2Hover hover:to-primary1Hover'
         : '',
-      variant === 'secondary' ? 'group border border-primary1' : '',
+      variant === 'secondary'
+        ? 'border border-primary1 text-primary1  hover:bg-primary1/15 decoration-bg-primary2/25'
+        : '',
       variant === 'link' ? '' : ''
     ]"
   >
