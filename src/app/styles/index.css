@@ -1,0 +1,28 @@
+@import './tailwind.css';
+@font-face {
+  font-family: 'Onest';
+  src: url('../../shared/assets/fonts/Onest-Medium.woff2') format('woff2')
+    url('../../shared/assets/fonts/Onest-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Onest';
+  src: url('../../shared/assets/fonts/Onest-Regular.woff2') format('woff2')
+    url('../../shared/assets/fonts/Onest-Regular.woff') format('woff');
+  font-weight: 1;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../../shared/assets/fonts/Stolzl-Regular.woff2') format('woff2')
+    url('../../shared/assets/fonts/Stolzl-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('../../shared/assets/fonts/TTNorms-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}

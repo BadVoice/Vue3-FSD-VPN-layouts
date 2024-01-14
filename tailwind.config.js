@@ -3,6 +3,11 @@ export default {
   content: ['./index.html', './src/**/*.{vue, js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        onest: ['Onest', 'sans-serif'],
+        stolzl: ['Stolzl', 'sans-serif'],
+        ttNorms: ['TT Norms', 'sans-serif']
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

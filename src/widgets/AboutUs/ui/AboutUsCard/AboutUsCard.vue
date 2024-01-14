@@ -21,9 +21,11 @@ const props = defineProps({
   <div>
     <AboutUsCardLayer>
       <template #icon>
-        <div>
+        <div
+          class="relative border border-white/[0.05] border-solid rounded-[18px] w-[100px] h-[100px]"
+        >
           <component
-            class="border border-white/[0.05] border-solid rounded-[18px] w-[100px] h-[100px]"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             :is="props.icon"
           />
         </div>

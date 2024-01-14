@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     icon: AboutUsWorldIcon,
-    titleContent: 'Доступ ко всем мировым ресрсам',
+    titleContent: 'Доступ ко всем мировым ресурсам',
     textContent: 'С помощью нашего VPN вы сможете использовать Instagram, Facebook, Wikipedia и др.'
   },
   {

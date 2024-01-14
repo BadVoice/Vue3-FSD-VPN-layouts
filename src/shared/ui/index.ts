@@ -5,6 +5,8 @@ import BrandLogoIcon from './Icons/BrandLogoIcon.vue'
 import AboutUsDeviceIcon from './Icons/AboutUsDeviceIcon.vue'
 import AboutUsWifiIcon from './Icons/AboutUsWifiIcon.vue'
 import AboutUsWorldIcon from './Icons/AboutUsWorldIcon.vue'
+import AboutUsOurBenefits from './Icons/AboutUsOurBenefits.vue'
+import AboutUsOtherFlaws from './Icons/AboutUsOtherFlaws.vue'
 
 export { BaseButton }
 export { RoutingNavbar }
@@ -13,3 +15,5 @@ export { BrandLogoIcon }
 export { AboutUsDeviceIcon }
 export { AboutUsWifiIcon }
 export { AboutUsWorldIcon }
+export { AboutUsOurBenefits }
+export { AboutUsOtherFlaws }
