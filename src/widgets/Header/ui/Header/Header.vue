@@ -4,8 +4,20 @@ import { RoutingNavbar } from '@/shared/ui/'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints/useBreakPoints'
 import { HeaderLogo } from '@/widgets/Header/ui'
 import { HeaderBurgerBtn } from '@/widgets/Header/ui/'
+import { DropdownNavbar } from '@/widgets/DropdownNavbar/ui/DropdownNavbar/index'
+import { computed, ref, watch } from 'vue'
 
 const breakpoints = useBreakpoints()
+
+const open = ref(false)
+
+const showMenu = () => {
+  open.value = !open.value
+}
+
+watch(open, () => {
+  console.log(open.value)
+})
 </script>
 
 <template>
@@ -30,7 +42,17 @@ const breakpoints = useBreakpoints()
         text="Войти"
         class="rounded-2xl"
       ></BaseButton>
-      <HeaderBurgerBtn v-if="!breakpoints.isXXl" />
+      <HeaderBurgerBtn @click="showMenu" v-if="!breakpoints.isXXl" />
     </div>
   </div>
+  <Transition
+    enter-active-class="transition ease-in duration-300"
+    enter-from-class="-translate-y-20"
+    enter-to-class="translate-y-0"
+    leave-active-class="transition ease-out duration-300"
+    leave-from-class="translate-y-0"
+    leave-to-class="-translate-y-20"
+  >
+    <DropdownNavbar :open="open" />
+  </Transition>
 </template>
