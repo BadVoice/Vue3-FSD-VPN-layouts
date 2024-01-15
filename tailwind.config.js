@@ -12,6 +12,7 @@ export default {
         transparent: 'transparent',
         current: 'currentColor',
         bgSectionSecondary: '#06091B',
+        bgSectionPrimary: '#1C2138',
         primary1: '#B5A9FF',
         primary2: '#6E81FE',
         primary1Hover: '#8B7ED7',

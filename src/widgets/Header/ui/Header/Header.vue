@@ -46,12 +46,12 @@ watch(open, () => {
     </div>
   </div>
   <Transition
-    enter-active-class="transition ease-in duration-300"
-    enter-from-class="-translate-y-20"
+    enter-active-class="transition ease-in"
+    enter-from-class="-translate-y-0"
     enter-to-class="translate-y-0"
-    leave-active-class="transition ease-out duration-300"
+    leave-active-class="transition ease-out"
     leave-from-class="translate-y-0"
-    leave-to-class="-translate-y-20"
+    leave-to-class="-translate-y-0"
   >
     <DropdownNavbar :open="open" />
   </Transition>
