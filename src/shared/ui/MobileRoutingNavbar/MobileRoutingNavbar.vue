@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { navlinksMock } from '../RoutingNavbar/__mocks__/navlinksMock'
+import { MobileNavlinksMock } from '@/shared/ui/MobileRoutingNavbar/__mocks__/mobileNavlinksMock'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints/useBreakPoints'
 const route = useRoute()
 
@@ -10,9 +10,11 @@ const activePage = (path: string) => {
 const breakpoints = useBreakpoints()
 </script>
 <template>
-  <nav class="m-auto">
-    <ul class="md:flex justify-center items-center py-7 gap-11 bg-primary-1 text-white hidden">
-      <li v-for="{ id, title, to } in navlinksMock" :key="id">
+  <nav class="flex w-full">
+    <ul
+      class="min-[320px]:flex min-[320px]:items-start flex-col items-start justify-center items-center py-7 gap-11 bg-primary-1 text-white hidden"
+    >
+      <li v-for="{ id, title, to } in MobileNavlinksMock" :key="id">
         <router-link
           :to="to"
           class="hover:text-primary1Hover transition-all duration-200"

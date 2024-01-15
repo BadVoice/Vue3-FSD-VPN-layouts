@@ -6,5 +6,6 @@ export const BREAKPOINTS = {
   SM: 730,
   MD: 850,
   LG: 1024,
-  XL: 1280
+  XL: 1280,
+  XXL: 1450
 } satisfies Breakpoints

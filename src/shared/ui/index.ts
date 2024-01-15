@@ -7,6 +7,8 @@ import AboutUsWifiIcon from './Icons/AboutUsWifiIcon.vue'
 import AboutUsWorldIcon from './Icons/AboutUsWorldIcon.vue'
 import AboutUsOurBenefits from './Icons/AboutUsOurBenefits.vue'
 import AboutUsOtherFlaws from './Icons/AboutUsOtherFlaws.vue'
+import CloseBurgerBtnIcon from './Icons/CloseBurgerBtnIcon.vue'
+import MobileRoutingNavbar from './MobileRoutingNavbar/MobileRoutingNavbar.vue'
 
 export { BaseButton }
 export { RoutingNavbar }
@@ -17,3 +19,5 @@ export { AboutUsWifiIcon }
 export { AboutUsWorldIcon }
 export { AboutUsOurBenefits }
 export { AboutUsOtherFlaws }
+export { CloseBurgerBtnIcon }
+export { MobileRoutingNavbar }
