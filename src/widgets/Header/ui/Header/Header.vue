@@ -42,7 +42,7 @@ watch(open, () => {
         text="Войти"
         class="rounded-2xl"
       ></BaseButton>
-      <HeaderBurgerBtn @click="showMenu" v-if="!breakpoints.isXXl" />
+      <HeaderBurgerBtn :state="open" @click="showMenu" v-if="!breakpoints.isXXl" />
     </div>
   </div>
   <Transition
