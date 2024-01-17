@@ -4,7 +4,6 @@ import DropdownNavbarProfile from '../DropdownNavbarProfile/DropdownNavbarProfil
 import type { Props } from './types'
 
 const item = {
-  id: 1,
   icon: DropdownProfileIcon,
   textContent: 'Личный кабинет',
   userEmailContent: 'hello@gmail.com'
@@ -17,7 +16,6 @@ withDefaults(defineProps<Partial<Props>>(), {
 <template>
   <div class="flex justify-between w-full gap-[30px] py-[300px] pb-[50px]">
     <DropdownNavbarProfile
-      :key="item.id"
       :icon="item.icon"
       :textContent="item.textContent"
       :userEmailContent="item.userEmailContent"
