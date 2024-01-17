@@ -4,7 +4,10 @@ import { RoutingNavbar } from '@/shared/ui/'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints/useBreakPoints'
 import { HeaderLogo } from '@/widgets/Header/ui'
 import { HeaderBurgerBtn } from '@/widgets/Header/ui/'
+import { HeaderSection } from '@/widgets/Header/ui/'
 import { DropdownNavbar } from '@/widgets/DropdownNavbar/ui/DropdownNavbar/index'
+import { BaseContainer } from '@/shared/ui/'
+
 import { computed, ref, watch } from 'vue'
 
 const breakpoints = useBreakpoints()
@@ -55,4 +58,31 @@ watch(open, () => {
   >
     <DropdownNavbar :open="open" />
   </Transition>
+
+  <div class="bg-blackBlack3 pt-[177px] pb-[275px]">
+    <BaseContainer>
+      <HeaderSection
+        :topTitle="'Tvoy VPN'"
+        :title="'Профиссиональный'"
+        :titleGradient="'VPN-сервис всего лишь за 100р'"
+        :subTitle="'Оставайтесь в безопасности и пользуйтесь любыми сайтами без ограничений'"
+      ></HeaderSection>
+      <div>
+        <BaseButton
+          :link="true"
+          :size="breakpoints.isLg ? 'medium' : 'medium'"
+          variant="primary"
+          class="rounded-2xl duration-300"
+          text="Попробовать vpn"
+        ></BaseButton>
+        <BaseButton
+          :link="true"
+          :size="breakpoints.isLg ? 'medium' : 'medium'"
+          variant="secondary"
+          class="rounded-2xl duration-300"
+          text="Попробовать vpn"
+        ></BaseButton>
+      </div>
+    </BaseContainer>
+  </div>
 </template>
