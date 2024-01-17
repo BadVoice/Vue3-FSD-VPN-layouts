@@ -11,7 +11,7 @@ const props = defineProps<Props>()
 <template>
   <div
     v-if="props.open"
-    class="w-full justify-between px-[30px] flex items-center bg-[#0F142B] flex-col"
+    class="w-full justify-between px-[30px] flex items-center bg-bgSectionSecondary flex-col"
   >
     <MobileRoutingNavbar :textSize="breakpoints.isXxs ? 'small' : 'medium'" />
     <DropdownNavbarProfileCard v-if="breakpoints.isXxs || breakpoints.isXs" />

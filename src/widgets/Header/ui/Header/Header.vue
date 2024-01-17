@@ -22,7 +22,7 @@ watch(open, () => {
 
 <template>
   <div
-    class="w-full justify-between min-h-[80px] m-auto px-[30px] flex items-center bg-bgSectionPrimary"
+    class="w-full justify-between min-h-[80px] m-auto px-[30px] flex items-center bg-blackBlack2 md:bg-blackBlack3"
   >
     <HeaderLogo />
     <RoutingNavbar v-if="breakpoints.isXXl" />

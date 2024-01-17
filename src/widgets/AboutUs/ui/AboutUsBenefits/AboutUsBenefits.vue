@@ -36,7 +36,7 @@ const benefits = <Array<any>>[
 ]
 </script>
 <template>
-  <div class="p-[70px] bg-[#0C1022] rounded-[60px] border border-white/[0.05] border-solid">
+  <div class="p-[70px] bg-blackBlack2 rounded-[60px] border border-white/[0.05] border-solid">
     <div class="gap-[50px] flex flex-row">
       <AboutUsBenefitsCard
         v-for="(item, index) in benefits"

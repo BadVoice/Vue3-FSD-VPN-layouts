@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Props } from './types'
 import DropdownNavbarProfileLayer from '../DropdownNavbarProfileLayer/DropdownNavbarProfileLayer.vue'
-import { ProfileIcon } from '@/shared/ui/'
 
 const props = defineProps<Props>()
 </script>

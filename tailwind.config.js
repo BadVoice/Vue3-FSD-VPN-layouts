@@ -18,7 +18,9 @@ export default {
         primary1Hover: '#8B7ED7',
         primary2Hover: '#5465D7',
         blackGray: '#7F84A5',
-        blackStroke: '#1C2138'
+        blackStroke: '#1C2138',
+        blackBlack2: '#0C1022',
+        blackBlack3: '#0A0E21'
       }
     }
   },
