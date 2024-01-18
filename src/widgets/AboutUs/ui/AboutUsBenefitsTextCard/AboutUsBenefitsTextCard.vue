@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import AboutUsBenefitsCardLayer from '../AboutUsBenefitsCardLayer/AboutUsBenefitsCardLayer.vue'
+import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints/useBreakPoints'
+
+const breakpoints = useBreakpoints()
 defineProps({
   icon: Object,
   text: String,
@@ -7,9 +10,14 @@ defineProps({
 })
 </script>
 <template>
-  <AboutUsBenefitsCardLayer :variant="variant">
+  <AboutUsBenefitsCardLayer
+    :variant="variant"
+    :size="
+      breakpoints.isXXl ? 'big' : breakpoints.isLg ? 'medium' : breakpoints.isSm ? 'small' : 'small'
+    "
+  >
     <template #icon>
-      <component :is="icon" />
+      <component class="w-[26px]" :is="icon" />
     </template>
     <template #text>
       {{ text }}

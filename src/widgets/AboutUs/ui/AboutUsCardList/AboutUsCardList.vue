@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { AboutUsDeviceIcon, AboutUsWifiIcon, AboutUsWorldIcon } from '@/shared/ui/'
 import AboutUsCard from '../AboutUsCard/AboutUsCard.vue'
+import { type Props } from './types'
+defineProps<Partial<Props>>()
 
-const items = [
+const items = <Array<any>>[
   {
     id: 1,
     icon: AboutUsWorldIcon,
@@ -25,7 +27,14 @@ const items = [
 ]
 </script>
 <template>
-  <div class="flex justify-Between flex-row gap-[30px]">
+  <div
+    class="flex flex-wrap mt-[40px]"
+    :class="[
+      size === 'big' ? ' gap-[30px]' : '',
+      size === 'medium' ? 'gap-[20px]' : '',
+      size === 'small' ? 'gap-[20px]' : ''
+    ]"
+  >
     <AboutUsCard
       v-for="item in items"
       :key="item.id"

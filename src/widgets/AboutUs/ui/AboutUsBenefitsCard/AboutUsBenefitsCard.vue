@@ -1,28 +1,49 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import AboutUsBenefitsTextCard from '../AboutUsBenefitsTextCard/AboutUsBenefitsTextCard.vue'
-defineProps({
-  title: String,
-  icon: Object,
-  text: {
-    type: Array as PropType<string[] | undefined>,
-    default: undefined
-  },
-  variant: String
-})
+import { type Props } from './types'
+defineProps<Partial<Props>>()
 </script>
 <template>
-  <div class="flex flex-col min-w-[514px]">
-    <div class="pb-[41px]">
-      <h2 class="font-stolzl font-weight-400 text-[40px] text-white">{{ title }}</h2>
+  <div
+    class="flex h-auto"
+    :class="[
+      size === 'big' ? ' flex-col w-[514px]' : '',
+      size === 'medium' ? 'flex-col w-[306px]' : '',
+      size === 'small' ? ' flex-col w-[281px]' : ''
+    ]"
+  >
+    <div
+      :class="[
+        size === 'big' ? ' pb-[41px]' : '',
+        size === 'medium' ? 'pb-[41px]' : '',
+        size === 'small' ? ' pb-[20px]' : ''
+      ]"
+    >
+      <h2
+        class="font-stolzl leading-[132%] text-[40px] text-white"
+        :class="[
+          size === 'big' ? ' text-[40px]' : '',
+          size === 'medium' ? 'text-[40px]' : '',
+          size === 'small' ? ' text-[26px]' : ''
+        ]"
+      >
+        {{ title }}
+      </h2>
     </div>
-    <div class="flex flex-col gap-[18px]">
+    <div
+      class="flex flex-col"
+      :class="[
+        size === 'big' ? ' gap-[20px]' : '',
+        size === 'medium' ? 'gap-[20px]' : '',
+        size === 'small' ? ' gap-[18px]' : ''
+      ]"
+    >
       <AboutUsBenefitsTextCard
         v-for="(item, index) in text"
         :key="index"
-        :text="item"
+        :text="item.toString()"
         :icon="icon"
-        :variant="variant"
+        :variant="variant ? variant.toString() : undefined"
       />
     </div>
   </div>

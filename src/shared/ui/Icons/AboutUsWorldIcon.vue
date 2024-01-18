@@ -1,5 +1,15 @@
+<script setup lang="ts">
+import { type Adaptive } from './types'
+defineProps<Partial<Adaptive>>()
+</script>
+
 <template>
   <svg
+    :class="[
+      size === 'big' ? ' ' : '',
+      size === 'medium' ? '' : '',
+      size === 'small' ? 'scale-[0.7]' : ''
+    ]"
     width="120"
     height="120"
     viewBox="0 0 120 120"
