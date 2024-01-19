@@ -9,6 +9,9 @@ import AboutUsOurBenefits from './Icons/AboutUsOurBenefits.vue'
 import AboutUsOtherFlaws from './Icons/AboutUsOtherFlaws.vue'
 import CloseBurgerBtnIcon from './Icons/CloseBurgerBtnIcon.vue'
 import MobileRoutingNavbar from './MobileRoutingNavbar/MobileRoutingNavbar.vue'
+import ProfileIcon from './Icons/ProfileIcon.vue'
+import DropdownProfileIcon from './Icons/DropdownProfileIcon.vue'
+import OpenBurgerBtnIcon from './Icons/OpenBurgerBtnIcon.vue'
 
 export { BaseButton }
 export { RoutingNavbar }
@@ -21,3 +24,6 @@ export { AboutUsOurBenefits }
 export { AboutUsOtherFlaws }
 export { CloseBurgerBtnIcon }
 export { MobileRoutingNavbar }
+export { ProfileIcon }
+export { DropdownProfileIcon }
+export { OpenBurgerBtnIcon }

@@ -2,37 +2,32 @@ import { type MobileNavlinks } from '../types'
 
 export const MobileNavlinksMock: MobileNavlinks[] = [
   {
-    id: '1',
-    title: 'Главная ',
-    to: '/'
-  },
-  {
-    id: '2',
+    id: 1,
     title: 'О сервисе ',
     to: '/'
   },
   {
-    id: '3',
+    id: 2,
     title: 'Преимущества ',
     to: '/'
   },
   {
-    id: '4',
+    id: 3,
     title: 'Отзывы ',
     to: '/'
   },
   {
-    id: '5',
+    id: 4,
     title: 'Регионы ',
     to: '/'
   },
   {
-    id: '6',
+    id: 5,
     title: 'Вопросы ',
     to: '/'
   },
   {
-    id: '7',
+    id: 6,
     title: 'Инструкция ',
     to: '/'
   }

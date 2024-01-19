@@ -22,7 +22,7 @@ watch(open, () => {
 
 <template>
   <div
-    class="w-full justify-between min-h-[80px] m-auto px-[30px] flex items-center bg-bgSectionPrimary"
+    class="w-full justify-between min-h-[80px] m-auto px-[30px] flex items-center bg-blackBlack2 md:bg-blackBlack3"
   >
     <HeaderLogo />
     <RoutingNavbar v-if="breakpoints.isXXl" />
@@ -42,7 +42,7 @@ watch(open, () => {
         text="Войти"
         class="rounded-2xl"
       ></BaseButton>
-      <HeaderBurgerBtn @click="showMenu" v-if="!breakpoints.isXXl" />
+      <HeaderBurgerBtn :state="open" @click="showMenu" v-if="!breakpoints.isXXl" />
     </div>
   </div>
   <Transition
