@@ -1,19 +1,13 @@
 <script setup lang="ts">
 import HeaderSectionLayer from '../HeaderSectionLayer/HeaderSectionLayer.vue'
-import { BaseButton } from '@/shared/ui/'
-import { withDefaults, defineProps } from 'vue'
+import { defineProps } from 'vue'
 import type { Props } from './types'
 
-const propsWithDefaults = withDefaults(defineProps<Props>(), {
-  topTitle: 'Tvoy VPN',
-  title: 'Профиссиональный',
-  titleGradient: 'VPN-сервис всего лишь за 100р',
-  subTitle: 'Оставайтесь в безопасности и пользуйтесь любыми сайтами без ограничений'
-})
+const propsWithDefaults = defineProps<Props>()
 </script>
 
 <template>
-  <HeaderSectionLayer>
+  <HeaderSectionLayer class="bg-pr">
     <template #topTitle>
       {{ propsWithDefaults.topTitle }}
     </template>
@@ -24,7 +18,7 @@ const propsWithDefaults = withDefaults(defineProps<Props>(), {
       {{ propsWithDefaults.titleGradient }}
     </template>
     <template #subTitle>
-      {{ propsWithDefaults.subTitle }}
+      {{  propsWithDefaults.subTitle }}
     </template>
   </HeaderSectionLayer>
 </template>

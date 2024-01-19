@@ -24,8 +24,8 @@ watch(open, () => {
 </script>
 
 <template>
-  <div
-    class="w-full justify-between min-h-[80px] m-auto px-[30px] flex items-center bg-blackBlack2 md:bg-blackBlack3"
+  <div :class="breakpoints.isMd ? 'bg-blackBlack3' : 'bg-blackBlack2'"
+    class="w-full justify-between min-h-[80px] m-auto px-[30px] flex items-center"
   >
     <HeaderLogo />
     <RoutingNavbar v-if="breakpoints.isXXl" />
@@ -63,11 +63,11 @@ watch(open, () => {
     <BaseContainer>
       <HeaderSection
         :topTitle="'Tvoy VPN'"
-        :title="'Профиссиональный'"
+        :title="'Профессиональный'"
         :titleGradient="'VPN-сервис всего лишь за 100р'"
         :subTitle="'Оставайтесь в безопасности и пользуйтесь любыми сайтами без ограничений'"
       ></HeaderSection>
-      <div>
+      <div class="flex flex-row gap-[20px]">
         <BaseButton
           :link="true"
           :size="breakpoints.isLg ? 'medium' : 'medium'"
