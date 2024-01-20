@@ -24,11 +24,15 @@ watch(open, () => {
 </script>
 
 <template>
-  <div :class="breakpoints.isMd ? 'bg-blackBlack3' : 'bg-blackBlack2'"
+  <div
+    :class="breakpoints.isMd ? 'bg-blackBlack2' : 'bg-blackBlack2'"
     class="w-full justify-between min-h-[80px] m-auto px-[30px] flex items-center"
   >
+    <div
+      class="absolute top-[-10%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[125px] overflow-hidden border-[#948BFF] rounded-[50%] border-[180px] opacity-[50%] bg-[#948BFF] z-[1] h-[250px] w-[250px] rotate-[45deg] bg-[#948BFF]"
+    ></div>
     <HeaderLogo />
-    <RoutingNavbar v-if="breakpoints.isXXl" />
+    <RoutingNavbar v-if="breakpoints.isXXl" class="z-[2]" />
     <div class="flex gap-6 align-center">
       <BaseButton
         :link="true"
@@ -59,8 +63,19 @@ watch(open, () => {
     <DropdownNavbar :open="open" />
   </Transition>
 
-  <div class="bg-blackBlack3 pt-[177px] pb-[275px]">
-    <BaseContainer>
+  <div class="bg-blackBlack2 pt-[177px] pb-[275px]">
+    <BaseContainer
+      class="flex flex-col"
+      :size="
+        breakpoints.isXXl
+          ? 'big'
+          : breakpoints.isLg
+            ? 'medium'
+            : breakpoints.isSm
+              ? 'small'
+              : 'small'
+      "
+    >
       <HeaderSection
         :topTitle="'Tvoy VPN'"
         :title="'Профессиональный'"

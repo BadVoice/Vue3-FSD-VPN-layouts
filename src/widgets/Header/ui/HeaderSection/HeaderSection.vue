@@ -7,7 +7,7 @@ const propsWithDefaults = defineProps<Props>()
 </script>
 
 <template>
-  <HeaderSectionLayer class="bg-pr">
+  <HeaderSectionLayer>
     <template #topTitle>
       {{ propsWithDefaults.topTitle }}
     </template>
@@ -18,7 +18,7 @@ const propsWithDefaults = defineProps<Props>()
       {{ propsWithDefaults.titleGradient }}
     </template>
     <template #subTitle>
-      {{  propsWithDefaults.subTitle }}
+      {{ propsWithDefaults.subTitle }}
     </template>
   </HeaderSectionLayer>
 </template>
